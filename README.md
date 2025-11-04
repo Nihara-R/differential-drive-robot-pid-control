@@ -1,47 +1,51 @@
-# 💎 Intelligent Gem Cutting Robotic Arm
+📘 Overview
 
-### 🎓 BSc (Hons) in Information Technology – Final Year Research Project  
-**Sri Lanka Institute of Information Technology (SLIIT)**  
-**Research Group:** Robotics and Intelligent Systems  
+This project simulates a Differential Drive Robot (DDR) using P, PD, and PID control algorithms to navigate toward a target point in a 2D environment.
+It visualizes the robot’s motion, heading, and control behavior in real time using Pygame.
 
----
+The simulation demonstrates:
 
-## 🧠 Project Overview
+Closed-loop control for distance and heading.
 
-This project aims to develop an **intelligent robotic arm** that automates the gemstone cutting process through robotics and artificial intelligence.  
-Traditional gem cutting in Sri Lanka is labor-intensive, requires high skill, and often results in inconsistency.  
-The proposed system introduces a semi-autonomous robotic solution capable of identifying, evaluating, and cutting gemstones with precision and minimal human intervention.
+The effects of proportional, derivative, and integral gains on motion behavior.
 
-The research integrates **machine learning, robotics, embedded systems, and AI-driven decision-making** to create a prototype that can intelligently analyze gem characteristics and execute optimized cutting operations.
+Interactive tuning of control parameters.
 
----
+Visual comparison between P, PD, and PID trajectories.
 
-## ⚙️ System Workflow
+⚙️ Features
 
-The system performs **four key functions**:
+✅ Interactive GUI using Pygame
+✅ Real-time robot motion and trajectory visualization
+✅ Switch between P, PD, and PID controllers instantly
+✅ Adjustable controller parameters during simulation
+✅ Anti-windup mechanism for integral control
+✅ Color-coded trajectory trails for each controller:
 
-1. **Robotic Arm Control**  
-   A programmable robotic arm, built using servo motors and controlled by Arduino or Raspberry Pi, performs precise physical movements for cutting operations.
+🔴 Red → P controller
 
-2. **Gem Identification**  
-   A camera scans the gemstone, and a **machine learning model** classifies the gem type and estimates its weight based on image and sensor data.
+🟢 Green → PD controller
 
-3. **Gem Evaluation & Cut Planning**  
-   The system analyzes the gem’s features and determines the optimal cutting method using **AI-based or rule-driven logic** to maximize gem value and minimize material loss.
+🔵 Blue → PID controller
 
-4. **Cut Execution**  
-   The robotic arm executes the cutting process according to pre-calculated angles and paths, producing a polished gem ready for further refinement or sale.
+🧩 Requirements
 
----
+Install the required dependencies using:
 
-## 🧩 Technologies Used
+pip install pygame
 
-- **Programming:** Python, C/C++  
-- **Hardware:** Arduino / Raspberry Pi, Servo Motors, Sensors  
-- **AI & ML Tools:** TensorFlow, OpenCV, Scikit-learn, Numpy  
-- **Other Tools:** SolidWorks (for mechanical design), VS Code, Jupyter Notebook  
 
----
+(Python’s built-in libraries like math, sys, and collections are already included.)
 
-## 📁 Repository Structure
+🚀 How to Run
 
+Download or clone this repository.
+
+Open a terminal in the project folder.
+
+Run the script:
+
+python assignment_ddr.py
+
+
+A Pygame simulation window will open.
