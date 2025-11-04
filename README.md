@@ -1,7 +1,8 @@
+Differential Drive Robot Simulation
+
 📘 Overview
 
-This project simulates a Differential Drive Robot (DDR) using P, PD, and PID control algorithms to navigate toward a target point in a 2D environment.
-It visualizes the robot’s motion, heading, and control behavior in real time using Pygame.
+Python simulation of a differential drive robot with P, PD, and PID control. Interactive Pygame visualization with real-time parameter tuning and trajectory tracking. Compare control strategies for autonomous navigation. Built for IE4060 Robotics @ SLIIT.
 
 The simulation demonstrates:
 
@@ -49,3 +50,4 @@ python assignment_ddr.py
 
 
 A Pygame simulation window will open.
+
